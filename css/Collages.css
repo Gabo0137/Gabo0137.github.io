@@ -1,0 +1,79 @@
+/* Importar Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@400;600&display=swap');
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background: url(../img/ldr1.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    max-width: 800px; /* Ancho máximo aumentado */
+    width: 80%; /* Sigue siendo flexible en pantallas más pequeñas */
+}
+
+/* Texto dinámico de felicitación */
+.dynamic-text {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    color: #FF69B4;
+    animation: color-change 3s infinite alternate;
+}
+
+/* Animación del texto */
+@keyframes color-change {
+    0% {
+        color: #FF69B4;
+    }
+    100% {
+        color: #FF4500;
+    }
+}
+
+/* Estilo del video */
+video {
+    width: 100%;
+    max-width: 80%;
+    border-radius: 10px;
+    margin: 20px 0;
+    background-color: #000; /* Fondo negro para el video si no se carga */
+}
+
+/* Mensaje debajo */
+.message {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Botón */
+#celebrateButton {
+    padding: 12px 24px;
+    background-color: #0b8115d3;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#celebrateButton:hover {
+    background-color: #0a65a1;
+}
